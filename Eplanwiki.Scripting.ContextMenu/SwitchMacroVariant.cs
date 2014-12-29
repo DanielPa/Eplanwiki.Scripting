@@ -44,27 +44,30 @@ namespace Eplanwiki.Scripting.ContextMenu
             // 
             this.comboBoxVariant.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxVariant.FormattingEnabled = true;
-            this.comboBoxVariant.Location = new System.Drawing.Point(145, 12);
+            this.comboBoxVariant.Location = new System.Drawing.Point(97, 8);
+            this.comboBoxVariant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxVariant.Name = "comboBoxVariant";
-            this.comboBoxVariant.Size = new System.Drawing.Size(121, 28);
+            this.comboBoxVariant.Size = new System.Drawing.Size(82, 21);
             this.comboBoxVariant.TabIndex = 0;
             this.comboBoxVariant.SelectedIndexChanged += new System.EventHandler(this.comboBoxVariant_SelectedIndexChanged);
             // 
             // labelVariant
             // 
             this.labelVariant.AutoSize = true;
-            this.labelVariant.Location = new System.Drawing.Point(13, 19);
+            this.labelVariant.Location = new System.Drawing.Point(9, 12);
+            this.labelVariant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelVariant.Name = "labelVariant";
-            this.labelVariant.Size = new System.Drawing.Size(60, 20);
+            this.labelVariant.Size = new System.Drawing.Size(40, 13);
             this.labelVariant.TabIndex = 1;
             this.labelVariant.Text = "Variant";
             // 
             // buttonOk
             // 
             this.buttonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOk.Location = new System.Drawing.Point(17, 74);
+            this.buttonOk.Location = new System.Drawing.Point(11, 60);
+            this.buttonOk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonOk.Name = "buttonOk";
-            this.buttonOk.Size = new System.Drawing.Size(121, 37);
+            this.buttonOk.Size = new System.Drawing.Size(81, 24);
             this.buttonOk.TabIndex = 2;
             this.buttonOk.Text = "OK";
             this.buttonOk.UseVisualStyleBackColor = true;
@@ -72,9 +75,10 @@ namespace Eplanwiki.Scripting.ContextMenu
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(145, 74);
+            this.buttonCancel.Location = new System.Drawing.Point(97, 60);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(121, 37);
+            this.buttonCancel.Size = new System.Drawing.Size(81, 24);
             this.buttonCancel.TabIndex = 3;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -83,16 +87,17 @@ namespace Eplanwiki.Scripting.ContextMenu
             // VarinatSelectionForm
             // 
             this.AcceptButton = this.buttonOk;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(278, 127);
+            this.ClientSize = new System.Drawing.Size(185, 95);
             this.ControlBox = false;
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.labelVariant);
             this.Controls.Add(this.comboBoxVariant);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VarinatSelectionForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
