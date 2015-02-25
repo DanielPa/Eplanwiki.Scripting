@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EplanPxfRoot Name="DIP" Type="WindowMacro" Version="2.4.8366" PxfVersion="1.23" SchemaVersion="1.7.8366" Source="" SourceProject="" Description="" ConfigurationFlags="0" NumMainObjects="0" NumProjectSteps="0" NumMDSteps="0" Custompagescaleused="true" StreamSchema="EBitmap, ,2,1,2;EPosition3D, ,0,3,2;ERay3D, ,0,4,2;EStreamableVector, ,0,5,2;BaseTextLine@W3D, ,2,19,2;Box3d@W3D, ,0,20,2;DMNCDataSet, ,1,22,2;DMNCDataSetVector, ,1,23,2;Linetype@W3D, ,0,25,2;Color@W3D, ,0,26,2;Material@W3D, ,3,27,2;Mesh3d@W3D, ,8,29,2;Mesh3dX@W3D, ,2,30,2;MeshBox@W3D, ,5,31,2;MeshEdge3d@W3D, ,0,32,2;MeshFace3d@W3D, ,2,33,2;MeshPoint3d@W3D, ,1,34,2;MeshPolygon3d@W3D, ,1,35,2;MeshSimpleTextureTriangle3d@W3D, ,2,36,2;MeshSimpleTriangle3d@W3D, ,1,37,2;MeshText3dX@W3D, ,0,38,2;MeshTriangle3d@W3D, ,2,39,2;MeshTriangleFace3d@W3D, ,0,40,2;MeshTriangleFaceEdge3D@W3D, ,0,41,2;CTexture@W3D,W3dBaseGeometry,0,78,2;MeshMate@W3D,W3dMeshModeller,7,79,2;MeshMateFace@W3D,W3dMeshModeller,1,80,2;MeshMateGrid@W3D,W3dMeshModeller,8,81,2;MeshMateGridLine@W3D,W3dMeshModeller,1,82,2;MeshMateLine@W3D,W3dMeshModeller,1,83,2">
+	<MacroVariant MacroFuncType="1" VariantId="0" ReferencePoint="136/224/0" Version="2.4.8366" PxfVersion="1.23" SchemaVersion="1.7.8366" Source="" SourceProject="" Description="" ConfigurationFlags="0" DocumentType="1" SelectionArea="85.0021191348481/253.391993844353/217.202535312408/173.29409463089" Customgost="0">  
+		<O4 Build="8366" A1="4/1" A3="0" A13="0" A14="0" A47="1" A48="1424891858" A50="2" A59="1" A404="1" A405="64" A406="0" A407="0" A431="1" A1101="1" A1102="" A1103="" A4043="0" A4049="0">
+			<O31 Build="8366" A1="31/3623" A3="0" A13="0" A14="0" A404="1" A405="64" A406="0" A407="0" A411="100" A412="L" A413="L" A414="0.13" A415="L" A416="0" A531="137/228" A532="137/220"/>
+			<O31 Build="8366" A1="31/3624" A3="0" A13="0" A14="0" A404="1" A405="64" A406="0" A407="0" A411="100" A412="L" A413="L" A414="0.13" A415="L" A416="0" A531="137/224" A532="141/224"/>
+			<O30 Build="8366" A1="30/3625" A3="0" A13="0" A14="0" A404="1" A405="64" A406="0" A407="0" A411="108" A412="L" A413="L" A414="L" A415="L" A416="0" A501="136/224" A503="0" A506="0" A511="??_??@{{ADDRESS}};">
+				<S54x505 A961="4" A962="L" A963="0" A964="L" A965="2048" A966="6" A967="0" A968="0" A969="1" A4000="L" A4001="L" A4013="0"/>
+			</O30>
+			<O30 Build="8366" A1="30/3626" A3="0" A13="0" A14="0" A404="1" A405="64" A406="0" A407="0" A411="108" A412="L" A413="L" A414="L" A415="L" A416="0" A501="138/224" A503="0" A506="0" A511="??_??@{{0}};">
+				<S54x505 A961="L" A962="L" A963="0" A964="L" A965="0" A966="1" A967="0" A968="0" A969="0" A4000="L" A4001="L" A4013="0"/>
+			</O30>
+			<O30 Build="8366" A1="30/3627" A3="0" A13="0" A14="0" A404="1" A405="64" A406="0" A407="0" A411="108" A412="L" A413="L" A414="L" A415="L" A416="0" A501="138/224" A503="0" A506="0" A511="??_??@{{1}};">
+				<S54x505 A961="L" A962="L" A963="0" A964="L" A965="0" A966="7" A967="0" A968="0" A969="0" A4000="L" A4001="L" A4013="0"/>
+			</O30>
+			<O37 Build="8366" A1="37/3628" A3="1" A13="0" A14="0" A404="1" A405="64" A406="0" A407="0" A682="1" A683="31/3623;31/3624;30/3625;30/3626;30/3627" A684="0" A687="8" A688="2" A689="-1" A690="-1" A691="0" A693="1" A792="0" A793="0" A794="0" A1261="0" A1262="44" A1263="0" A1631="0/-8" A1632="5/0">
+				<S109x692 R1906="31/3623"/>
+				<S109x692 R1906="31/3624"/>
+				<S109x692 R1906="30/3625"/>
+				<S109x692 R1906="30/3626"/>
+				<S109x692 R1906="30/3627"/>
+				<S40x1201 A762="136/228">
+					<S39x761 A751="1" A752="0" A753="0" A754="1"/>
+				</S40x1201>
+				<S89x5 Build="8366" A3="0" A4="1" R7="37/3628" A13="0" A14="0" A189="0" A404="9" A405="64" A406="0" A407="0" A411="308" A412="L" A413="L" A414="L" A415="L" A416="0" A1651="0/-8" A1652="5/0" A1653="0" A1654="0" A1655="0" A1656="0" A1657="0"/>
+			</O37>
+		</O4>
+	</MacroVariant>
+</EplanPxfRoot>
