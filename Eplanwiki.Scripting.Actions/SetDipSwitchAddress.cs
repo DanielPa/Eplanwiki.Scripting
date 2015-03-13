@@ -12,7 +12,7 @@ using System.Xml.XPath;
 using Eplan.EplApi.ApplicationFramework;
 using System.Drawing;
 
-namespace Eplanwiki.Scripting.ContextMenu
+namespace Eplanwiki.Scripting.Actions
 {
     public class SetDipSwitchAddress
     {

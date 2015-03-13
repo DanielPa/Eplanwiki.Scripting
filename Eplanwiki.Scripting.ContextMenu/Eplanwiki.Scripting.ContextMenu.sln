@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eplanwiki.Scripting.ContextMenu", "Eplanwiki.Scripting.ContextMenu.csproj", "{379A9267-2A8B-45D7-82A2-C6C6F160589E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eplanwiki.Scripting.Actions", "..\Eplanwiki.Scripting.Actions\Eplanwiki.Scripting.Actions.csproj", "{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,18 @@ Global
 		{379A9267-2A8B-45D7-82A2-C6C6F160589E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{379A9267-2A8B-45D7-82A2-C6C6F160589E}.Release|x64.ActiveCfg = Release|Any CPU
 		{379A9267-2A8B-45D7-82A2-C6C6F160589E}.Release|x86.ActiveCfg = Release|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Release|x64.ActiveCfg = Release|Any CPU
+		{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
