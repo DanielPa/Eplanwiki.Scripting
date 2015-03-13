@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eplanwiki.Scripting.ContextMenu", "Eplanwiki.Scripting.ContextMenu.csproj", "{379A9267-2A8B-45D7-82A2-C6C6F160589E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eplanwiki.Scripting.ContextMenu", "Eplanwiki.Scripting.ContextMenu\Eplanwiki.Scripting.ContextMenu.csproj", "{379A9267-2A8B-45D7-82A2-C6C6F160589E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eplanwiki.Scripting.Actions", "..\Eplanwiki.Scripting.Actions\Eplanwiki.Scripting.Actions.csproj", "{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eplanwiki.Scripting.Actions", "Eplanwiki.Scripting.Actions\Eplanwiki.Scripting.Actions.csproj", "{0A79FBF3-7B29-44BF-9FC8-2EEB6FCE5544}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
