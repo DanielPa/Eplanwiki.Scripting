@@ -92,8 +92,8 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OpenProjectFilePathContextItem.cs" />
-    <Compile Include="SwitchMacroVariant.cs">
+    <Compile Include="OpenProjectFilePathContextItme\OpenProjectFilePathContextItem.cs" />
+    <Compile Include="SwitchMacroVariant\SwitchMacroVariant.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -115,7 +115,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="SwitchMacroVariant.resx">
+    <EmbeddedResource Include="SwitchMacroVariant\SwitchMacroVariant.resx">
       <DependentUpon>SwitchMacroVariant.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

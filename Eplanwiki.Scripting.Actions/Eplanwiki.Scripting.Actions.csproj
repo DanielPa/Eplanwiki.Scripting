@@ -54,10 +54,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SetDipSwitchAddress.cs" />
+    <Compile Include="SetDipSwitchAdress\SetDipSwitchAddress.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DIP.ema" />
+    <None Include="SetDipSwitchAdress\DIP.ema" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
