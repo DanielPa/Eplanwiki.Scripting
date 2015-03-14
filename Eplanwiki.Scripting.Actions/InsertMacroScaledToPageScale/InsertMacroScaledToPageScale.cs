@@ -44,7 +44,7 @@ namespace Eplanwiki.Scripting.Actions
             this.labelRepType.AutoSize = true;
             this.labelRepType.Location = new System.Drawing.Point(12, 9);
             this.labelRepType.Name = "labelRepType";
-            this.labelRepType.Size = new System.Drawing.Size(141, 20);
+            this.labelRepType.Size = new System.Drawing.Size(94, 13);
             this.labelRepType.TabIndex = 0;
             this.labelRepType.Text = "Repreentationtype";
             // 
@@ -53,7 +53,7 @@ namespace Eplanwiki.Scripting.Actions
             this.labelVarinat.AutoSize = true;
             this.labelVarinat.Location = new System.Drawing.Point(12, 48);
             this.labelVarinat.Name = "labelVarinat";
-            this.labelVarinat.Size = new System.Drawing.Size(60, 20);
+            this.labelVarinat.Size = new System.Drawing.Size(40, 13);
             this.labelVarinat.TabIndex = 1;
             this.labelVarinat.Text = "Variant";
             // 
@@ -63,7 +63,7 @@ namespace Eplanwiki.Scripting.Actions
             this.comboBoxRepType.FormattingEnabled = true;
             this.comboBoxRepType.Location = new System.Drawing.Point(159, 6);
             this.comboBoxRepType.Name = "comboBoxRepType";
-            this.comboBoxRepType.Size = new System.Drawing.Size(270, 28);
+            this.comboBoxRepType.Size = new System.Drawing.Size(270, 21);
             this.comboBoxRepType.TabIndex = 0;
             // 
             // comboBoxVariant
@@ -72,13 +72,15 @@ namespace Eplanwiki.Scripting.Actions
             this.comboBoxVariant.FormattingEnabled = true;
             this.comboBoxVariant.Location = new System.Drawing.Point(159, 45);
             this.comboBoxVariant.Name = "comboBoxVariant";
-            this.comboBoxVariant.Size = new System.Drawing.Size(270, 28);
+            this.comboBoxVariant.Size = new System.Drawing.Size(270, 21);
             this.comboBoxVariant.TabIndex = 1;
             // 
             // buttonOk
             // 
+            this.buttonOk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOk.Location = new System.Drawing.Point(12, 149);
+            this.buttonOk.Location = new System.Drawing.Point(12, 127);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(417, 33);
             this.buttonOk.TabIndex = 3;
@@ -91,7 +93,7 @@ namespace Eplanwiki.Scripting.Actions
             this.checkBoxPageScale.AutoSize = true;
             this.checkBoxPageScale.Location = new System.Drawing.Point(159, 93);
             this.checkBoxPageScale.Name = "checkBoxPageScale";
-            this.checkBoxPageScale.Size = new System.Drawing.Size(22, 21);
+            this.checkBoxPageScale.Size = new System.Drawing.Size(15, 14);
             this.checkBoxPageScale.TabIndex = 2;
             this.checkBoxPageScale.UseVisualStyleBackColor = true;
             // 
@@ -100,7 +102,7 @@ namespace Eplanwiki.Scripting.Actions
             this.labelPageScale.AutoSize = true;
             this.labelPageScale.Location = new System.Drawing.Point(12, 92);
             this.labelPageScale.Name = "labelPageScale";
-            this.labelPageScale.Size = new System.Drawing.Size(108, 20);
+            this.labelPageScale.Size = new System.Drawing.Size(75, 13);
             this.labelPageScale.TabIndex = 6;
             this.labelPageScale.Text = "To page scale";
             // 
@@ -108,7 +110,7 @@ namespace Eplanwiki.Scripting.Actions
             // 
             this.AcceptButton = this.buttonOk;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(438, 201);
+            this.ClientSize = new System.Drawing.Size(438, 172);
             this.ControlBox = false;
             this.Controls.Add(this.labelPageScale);
             this.Controls.Add(this.checkBoxPageScale);
@@ -117,12 +119,21 @@ namespace Eplanwiki.Scripting.Actions
             this.Controls.Add(this.comboBoxRepType);
             this.Controls.Add(this.labelVarinat);
             this.Controls.Add(this.labelRepType);
+            this.MaximumSize = new System.Drawing.Size(454, 211);
+            this.MinimumSize = new System.Drawing.Size(454, 211);
             this.Name = "RepresentationTypeAndVariantSelector";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select representationtype and variant";
+            this.Load += new System.EventHandler(this.RepresentationTypeAndVariantSelector_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
+        }
+
+        private void RepresentationTypeAndVariantSelector_Load(object sender, EventArgs e)
+        {
 
         }
     }
@@ -132,14 +143,14 @@ namespace Eplanwiki.Scripting.Actions
     /// </summary>
     public class InsertMacroScaledToPageScale
     {
+        private uint MenuId;
+        private WindowWrapper ww = null;
+
         [DeclareAction("InsertMacroScaledToPageScale")]        
         public void Run()
         {
             string tempPath = PathMap.SubstitutePath("$(TMP)");
             string tempMacro = tempPath + "\\temp.ema";
-
-            Process oCurrent = Process.GetCurrentProcess();
-            var ww = new WindowWrapper(oCurrent.MainWindowHandle); //wrap the form to eplan process
 
             OpenMacroDialog dlg = new OpenMacroDialog();
 
@@ -197,12 +208,64 @@ namespace Eplanwiki.Scripting.Actions
                 }
             }
 
-            document.PreserveWhitespace = true;
+            document.PreserveWhitespace = true; //TODO
             XmlTextWriter writer = new XmlTextWriter(xmlFileName, Encoding.UTF8);
             writer.Formatting = Formatting.Indented;
             document.WriteTo(writer);
             writer.Close();
         }        
+
+        /// <summary>
+        /// Called at loading this script. Userdecision adding menuitem.
+        /// </summary>
+        [DeclareRegister]
+        public void OnRegister()
+        {            
+            Process oCurrent = Process.GetCurrentProcess();
+            this.ww = new WindowWrapper(oCurrent.MainWindowHandle); //wrap the form to eplan process
+            DialogResult result = MessageBox.Show(ww, "Do you want to add a menuitem to the \"Insert\"-menu for this action?", 
+                "Action \"InsertMacroScaledToPageScale\" is loaded", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.AddMenueItem();
+            }
+        }
+
+        /// <summary>
+        /// Called at unloading this script. Removes menuitem if exists.
+        /// </summary>
+        [DeclareUnregister]
+        public void OnUnRegister()
+        {
+            if (this.MenuId != null)
+            {
+                this.RemoveMenuItem();
+            }
+        }
+
+        /// <summary>
+        /// 37024 MenuId of insert/windowmacro
+        /// </summary>
+        private void AddMenueItem()
+        {
+            Eplan.EplApi.Gui.Menu menu = new Eplan.EplApi.Gui.Menu();
+            this.MenuId = menu.AddMenuItem("Windowmacro with scaling...", 
+                "InsertMacroScaledToPageScale", 
+                "Windowmacro with scaling option", 
+                37024, 1, false, false);
+        }
+
+        /// <summary>
+        /// Removes MenuId wich was set from AddMenuItem().
+        /// </summary>
+        private void RemoveMenuItem()
+        {
+            if (this.MenuId != null)
+            {
+                Eplan.EplApi.Gui.Menu menu = new Eplan.EplApi.Gui.Menu();
+                menu.RemoveMenuItem(this.MenuId);
+            }
+        }
     }
     
     /// <summary>
@@ -370,6 +433,7 @@ namespace Eplanwiki.Scripting.Actions
         Variant_O = 14,
         Variant_P = 15
     }
+
     /// <summary>
     /// For handling the owner of a form. Copied from Eplan API "User Guide" example
     /// </summary>
