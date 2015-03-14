@@ -64,12 +64,6 @@
     <None Include="SetDipSwitchAdress\DIP.ema" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="InsertMacroScaledToPageScale\InsertMacroScaledToPageScale.de-DE.resx">
-      <DependentUpon>InsertMacroScaledToPageScale.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InsertMacroScaledToPageScale\InsertMacroScaledToPageScale.en.resx">
-      <DependentUpon>InsertMacroScaledToPageScale.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="InsertMacroScaledToPageScale\InsertMacroScaledToPageScale.resx">
       <DependentUpon>InsertMacroScaledToPageScale.cs</DependentUpon>
     </EmbeddedResource>
