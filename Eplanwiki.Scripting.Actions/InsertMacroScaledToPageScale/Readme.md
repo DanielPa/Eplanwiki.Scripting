@@ -7,4 +7,4 @@ For more information see the Eplan online helpfiles "Dialog Save as"
 
 The script was inspired by ptuga in this post:
 https://getsatisfaction.com/stlm/topics/can-an-object-layer-property-be-change-using-scripts
-![My image](DanielPa.github.com/Eplanwiki.Scripting/tree/master/Eplanwiki.Scripting.Actions/InsertMacroScaledToPageScale/scale.gif)
+![My image](scale.gif)
