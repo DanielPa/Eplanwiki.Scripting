@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Eplanwiki.Scripting.EditMacroboxes.MacroBox">
+    <Position X="12.25" Y="2.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Eplanwiki.Scripting.EditMacroboxes.MacroBox.RepresentationTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MacroBox.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABABChEAIAAAAAAAQAAACAAAIIAAAAQAAAaAA=</HashCode>
+      <FileName>MacroBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Eplanwiki.Scripting.EditMacroboxes.Page">
+    <Position X="7.25" Y="1.5" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Eplanwiki.Scripting.EditMacroboxes.Page.StructureSegments" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Page.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Eplanwiki.Scripting.EditMacroboxes.Page.DocumentTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Page.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="MacroBoxList" Type="Eplanwiki.Scripting.EditMacroboxes.MacroBox" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.75" Y="3.75" />
+        <Point X="11.865" Y="3.75" />
+        <Point X="11.865" Y="5.25" />
+        <Point X="12.25" Y="5.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.339" Y="1.591" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAgAABAABBAgAAAAACEIBAAAIgAAAYAAAAQAAACAAAk=</HashCode>
+      <FileName>Page.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MacroBoxList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Eplanwiki.Scripting.EditMacroboxes.Project">
+    <Position X="4.75" Y="1" Width="1.5" />
+    <AssociationLine Name="PageList" Type="Eplanwiki.Scripting.EditMacroboxes.Page" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="2.94" />
+        <Point X="5.5" Y="3.75" />
+        <Point X="7.25" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAIAEAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="PageList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Eplanwiki.Scripting.EditMacroboxes.EplanScriptHelper">
+    <Position X="1.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAoAAAAIAAEgAAAAAAAAAAADAAAIAAAgAEA=</HashCode>
+      <FileName>EplanScriptHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
