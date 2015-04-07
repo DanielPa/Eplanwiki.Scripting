@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Eplanwiki.Scripting.Prototypes")]
+[assembly: AssemblyTitle("Eplanwiki.Scripting.EditMacroboxes")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Eplanwiki.Scripting.Prototypes")]
+[assembly: AssemblyProduct("Eplanwiki.Scripting.EditMacroboxes")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8e5e7f68-b26d-4935-aa8f-930a8a030c61")]
+[assembly: Guid("38ea734c-52e9-4f7f-bc23-67598b41d49a")]
 
 // Version information for an assembly consists of the following four values:
 //
