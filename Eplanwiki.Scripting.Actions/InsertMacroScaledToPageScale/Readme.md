@@ -8,3 +8,7 @@ For more information see the Eplan online helpfiles "Dialog Save as"
 The script was inspired by ptuga in this post:
 https://getsatisfaction.com/stlm/topics/can-an-object-layer-property-be-change-using-scripts
 ![My image](scale.gif)
+
+See Video:
+----------
+[![Youtube Video](http://img.youtube.com/vi/FgK0IhvBRno/0.jpg)](http://www.youtube.com/watch?v=FgK0IhvBRno)]
