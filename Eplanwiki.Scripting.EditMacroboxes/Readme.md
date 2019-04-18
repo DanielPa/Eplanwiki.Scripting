@@ -1,4 +1,4 @@
-Pre-Alpha
+~~Pre-Alpha~~ Proof of concept
 ==========
 ![My image](ClassDiagram1.png)
 
